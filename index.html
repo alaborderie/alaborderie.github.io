@@ -15,10 +15,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.js"></script>
+
     <style>
         #content {
             padding-top: 5em;
             min-height: 100vh;
+        }
+
+        .birthday {
+            margin: 0;
+            background: #020202;
+            cursor: crosshair;
+        }
+
+        canvas {
+            display: block
+        }
+
+        h1 {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-family: "Source Sans Pro";
+            font-size: 5em;
+            font-weight: 900;
+            -webkit-user-select: none;
+            user-select: none;
         }
     </style>
 </head>
@@ -45,19 +69,27 @@
             </div>
         </header>
 
-        <main id="content" class="ui fluid container">
-            <div class="ui container">
+        <!-- <main id="content" class="ui fluid container"> -->
+        <!-- <div class="ui container">
                 <div class="ui cards two stackable">
-                    <div class="ui card segment inverted teal">
+                    <a class="ui card segment inverted teal" href="#">
                         <h3 class="ui header content center aligned">Bonjour</h3>
-                    </div>
-                    <div class="ui card segment inverted teal">
+                    </a>
+                    <a class="ui card segment inverted teal" href="#">
                         <h3 class="ui header content center aligned">Thomas</h3>
-                    </div>
+                    </a>
                 </div>
+            </div> -->
+        <main>
+            <div class="birthday">
+                <h1>Happy Birthday</h1>
+                <canvas id="birthday"></canvas>
             </div>
         </main>
+        <!-- </main> -->
     </div>
+
+    <script src="./js/birthday.js"></script>
 
     <script>
         let openSidebar = () => {
