@@ -16,7 +16,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.js"></script>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     <style>
+        #title {
+            position: absolute;
+            top: 20%;
+            width: 100%;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-size: 3em;
+        }
+
         #content {
             padding-top: 5em;
             min-height: 100vh;
@@ -110,6 +125,11 @@
             </div> -->
         <main>
             <div class="birthday">
+                <div id="title" class="ui one column stackable center aligned page grid">
+                    <div class="column twelve wide">
+                        <h1>Happy birthday! 😘</h1>
+                    </div>
+                </div>
                 <canvas id="birthday"></canvas>
                 <!-- <div id="present"> -->
                 <img id="gift" class="animated" src="./assets/img/gift.png">
