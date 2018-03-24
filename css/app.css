@@ -27,7 +27,7 @@ canvas {
 
 .first {
     left: -100%;
-    margin-top: 100px !important;
+    margin-top: 50px !important;
     transition: left 1s ease 1s;
 }
 
@@ -36,6 +36,12 @@ canvas {
     margin-top: 190px;
     font-size: 5em;
     transition: right 1s ease 1s
+}
+
+.ticketsText {
+    position: absolute;
+    top: 50px;
+    opacity: 0;
 }
 
 /* =========================================================================== */
@@ -61,6 +67,7 @@ canvas {
     position: absolute;
     width: 100%;
     top: 50%;
+    transition: opacity 1s ease;
 }
 
 #content {
@@ -74,6 +81,26 @@ canvas {
     left: 40%;
     width: 20%;
     height: auto;
+}
+
+#explosion {
+    position: absolute;
+    bottom: 45%;
+    left: 45%;
+    width: 10%;
+    height: auto;
+    opacity: 0;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+#tickets {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    width: 40%;
+    height: auto;
+    opacity: 0;
 }
 
 #confettiLeft {
@@ -112,6 +139,19 @@ canvas {
 }
 .anim-entry-right {
     right: 0;
+}
+
+.anim-to-center {
+    transition: bottom 1s ease 2s;
+    bottom: 40%;
+}
+
+.anim-open {
+    /* TODO */
+}
+
+.opening {
+    bottom: 0px;
 }
 
 .animated {
