@@ -40,7 +40,7 @@ canvas {
 
 .ticketsText {
     position: absolute;
-    top: 50px;
+    top: 30px;
     opacity: 0;
 }
 
@@ -146,10 +146,12 @@ canvas {
     bottom: 40%;
 }
 
-.anim-open {
-    /* TODO */
+.anim-tickets {
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
-
 .opening {
     bottom: 0px;
 }
