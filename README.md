@@ -1,3 +1,3 @@
-# Anniversaire de Thomas !
+# Joyeux anniversaire !
 
-[Cliquez ici](https://alaborderie.github.io/index.html)
+[Cliquez ici](https://alaborderie.github.io)
